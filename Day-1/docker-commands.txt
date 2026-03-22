@@ -1,0 +1,8 @@
+# Basic Docker Commands
+
+docker --version
+docker pull ubuntu
+docker run ubuntu
+docker ps
+docker images
+docker stop <container_id>
