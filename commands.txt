@@ -1,0 +1,116 @@
+# AWS EC2 Portfolio Deployment - Commands Used
+
+## 1. Connect to EC2 Instance (SSH)
+
+# (Used AWS EC2 Instance Connect from browser)
+
+---
+
+## 2. Update system packages
+
+sudo yum update -y
+
+---
+
+## 3. Install Apache Web Server
+
+sudo yum install httpd -y
+
+---
+
+## 4. Start Apache server
+
+sudo systemctl start httpd
+
+---
+
+## 5. Enable Apache on boot
+
+sudo systemctl enable httpd
+
+---
+
+## 6. Create a test webpage
+
+echo "<h1>Hello Aditya from AWS 🚀</h1>" | sudo tee /var/www/html/index.html
+
+---
+
+## 7. Navigate to web root directory
+
+cd /var/www/html
+
+---
+
+## 8. Remove default/old files
+
+sudo rm -rf *
+
+---
+
+## 9. Install Git
+
+sudo yum install git -y
+
+---
+
+## 10. Clone portfolio repository from GitHub
+
+sudo git clone https://github.com/adityaraj1001/Portfolio
+
+---
+
+## 11. Move into portfolio folder
+
+cd Portfolio
+
+---
+
+## 12. Copy portfolio files to web directory
+
+sudo cp -r * /var/www/html/
+
+---
+
+## 13. Move files (fix folder structure)
+
+sudo mv /var/www/html/Portfolio/* /var/www/html/
+
+---
+
+## 14. Remove extra folder
+
+sudo rm -rf /var/www/html/Portfolio
+
+---
+
+## 15. Restart Apache server
+
+sudo systemctl restart httpd
+
+---
+
+## 16. Check files in web directory
+
+ls /var/www/html
+
+---
+
+## 17. Access website in browser
+
+http://<public-ip>
+
+# Example:
+
+http://54.206.33.208
+
+---
+
+## Notes:
+
+* Opened ports in Security Group:
+
+  * SSH (22)
+  * HTTP (80)
+* Used EC2 Instance Connect for terminal access
+* Hosted portfolio using Apache on AWS EC2
