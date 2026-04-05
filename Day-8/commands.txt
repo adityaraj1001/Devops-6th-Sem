@@ -1,0 +1,19 @@
+# Day-8: Dockerfile & Custom Image (Aditya Raj)
+
+# 1. Create Dockerfile
+# (Using nginx base image)
+
+# 2. Build image
+docker build -t mywebsite .
+
+# 3. Run container
+docker run -d -p 8080:80 mywebsite
+
+# 4. Check running containers
+docker ps
+
+# 5. Stop container
+docker stop <container_id>
+
+# 6. Remove container
+docker rm <container_id>
