@@ -1,0 +1,41 @@
+# Docker Day-3 Practice (Aditya Raj)
+
+# 1. Run Ubuntu Container with Environment Variable
+docker run -it --name ubuntu_container -e COLLEGE=CSE ubuntu bash
+
+# Check variable
+echo $COLLEGE
+
+# Exit container
+exit
+
+# 2. Start Container Again
+docker start -i ubuntu_container
+
+# 3. Stop Container
+docker stop ubuntu_container
+
+# 4. Execute inside running container
+docker exec -it ubuntu_container bash
+
+# 5. Run NGINX Container
+docker run -d --name app2 -p 8080:80 nginx
+
+# 6. Check running containers
+docker ps
+
+# 7. Stop container
+docker stop app2
+
+# 8. Remove container
+docker rm app2
+
+# 9. Run container using .env file
+docker run -d --name env_container --env-file .env -p 8080:80 nginx
+
+# Notes:
+# - docker run → create + start container
+# - docker start → start existing container
+# - docker exec → run command inside running container
+# - docker stop → stop container
+# - docker rm → remove container
