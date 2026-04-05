@@ -1,0 +1,12 @@
+# Day-9: Push Docker Image to Docker Hub (Aditya Raj)
+
+# 1. Login to Docker Hub
+docker login
+
+# 2. Tag your image
+docker tag mywebsite username/mywebsite:latest
+
+# 3. Push image
+docker push username/mywebsite:latest
+
+# 4. Verify on Docker Hub website
