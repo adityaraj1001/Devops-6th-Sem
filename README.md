@@ -59,15 +59,4 @@ The goal of this repository is to build **real-world DevOps skills** and maintai
 
 ---
 
-## 📂 Repository Structure
 
-```bash
-Devops-6th-Sem/
-│
-├── Day-1/
-├── Day-2/
-├── Day-3/
-├── Day-4/
-├── Day-5/
-├── Day-6/
-└── README.md
