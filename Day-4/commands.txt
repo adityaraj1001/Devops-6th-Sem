@@ -1,0 +1,30 @@
+# Day-4: AWS EC2 + Deploy Portfolio (Aditya Raj)
+
+# 1. Connect to EC2 Instance
+ssh -i key.pem ec2-user@<public-ip>
+
+# 2. Go to Web Directory
+cd /var/www/html
+
+# 3. Remove old files
+sudo rm -rf *
+
+# 4. Clone GitHub Repo
+sudo git clone https://github.com/adityaraj1001/Portfolio
+
+# 5. Move files to web directory
+sudo cp -r Portfolio/* /var/www/html/
+
+# 6. Restart Web Server
+sudo systemctl restart httpd
+
+# 7. Check files
+ls /var/www/html
+
+# 8. Open in Browser
+http://<your-public-ip>
+
+# Notes:
+# - httpd = Apache server
+# - Use 'sudo' for admin access
+# - Git clone downloads project from GitHub
