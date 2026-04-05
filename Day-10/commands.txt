@@ -1,0 +1,10 @@
+# Day-10: Docker Compose (Aditya Raj)
+
+# 1. Run services
+docker-compose up -d
+
+# 2. Check containers
+docker ps
+
+# 3. Stop services
+docker-compose down
