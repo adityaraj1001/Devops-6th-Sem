@@ -1,0 +1,40 @@
+# Day-5: AWS EC2 Instance Setup (Aditya Raj)
+
+# 1. Login to AWS Console
+# Open AWS → EC2 Dashboard
+
+# 2. Launch EC2 Instance
+# - Name: MyFirstServer
+# - AMI: Amazon Linux 2023
+# - Instance Type: t3.micro
+# - Key Pair: created/downloaded
+# - Security Group: Allow SSH (22), HTTP (80)
+
+# 3. Connect to Instance
+ssh -i key.pem ec2-user@<public-ip>
+
+# 4. Update System
+sudo yum update -y
+
+# 5. Install Apache Server (httpd)
+sudo yum install httpd -y
+
+# 6. Start Apache Service
+sudo systemctl start httpd
+
+# 7. Enable Apache on Boot
+sudo systemctl enable httpd
+
+# 8. Check Service Status
+sudo systemctl status httpd
+
+# 9. Open Website in Browser
+http://<public-ip>
+
+# Output:
+# Apache default page will be visible
+
+# Notes:
+# - EC2 is a virtual server
+# - httpd is Apache web server
+# - Security group must allow HTTP (port 80)
