@@ -1,0 +1,5 @@
+docker pull ubuntu
+docker run -it ubuntu
+docker ps
+docker images
+docker stop <container_id>
