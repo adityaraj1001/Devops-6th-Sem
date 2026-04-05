@@ -1,0 +1,10 @@
+# Day-11: GitHub Actions CI/CD (Aditya Raj)
+
+# 1. Create workflow file
+.github/workflows/main.yml
+
+# 2. Push code to GitHub
+
+# 3. GitHub Actions runs automatically
+
+# 4. Check Actions tab
