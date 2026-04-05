@@ -10,17 +10,17 @@
 
 ---
 
-## 📌 Docker Containers Running
+## 📌 Instances Running
 <img src="https://github.com/user-attachments/assets/564074f9-84ad-4eed-8af9-9389b3578c85" width="800"/>
 
 ---
 
-## 📌 Terminal Commands Execution
+## 📌 Instances Execution(EC2)
 <img src="https://github.com/user-attachments/assets/1bea8bbe-8637-4d1b-9512-2e21c18a8a5d" width="800"/>
 
 ---
 
-## 📌 Additional Output / Configuration
+## 📌 Terminal Output / Configuration
 <img src="https://github.com/user-attachments/assets/f1015ea7-1486-4a39-9720-ada0d01ec41f" width="800"/>
 
 ---
