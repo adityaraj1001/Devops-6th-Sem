@@ -4,7 +4,7 @@
 
 ## 📌 Introduction
 
-DevOps is a combination of **Development + Operations** that focuses on:
+DevOps is a combination of **Development + Operations** that focuses on: 
 
 * Faster delivery
 * Automation
