@@ -1,0 +1,19 @@
+name: Docker Push Pipeline
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  docker:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    - name: Build Docker Image
+      run: docker build -t my-app .
+
+    - name: Simulate Push
+      run: echo "Docker image pushed (demo)"
