@@ -1,0 +1,8 @@
+version: '3'
+
+services:
+  app:
+    image: ubuntu
+    environment:
+      - APP_ENV=production
+      - USER_NAME=Aditya
