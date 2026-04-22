@@ -1,0 +1,3 @@
+docker run -e MY_NAME=Aditya ubuntu env
+docker exec -it <container_id> env
+docker run -e GREETING="Hello DevOps" ubuntu bash -c 'echo $GREETING'
