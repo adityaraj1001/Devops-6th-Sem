@@ -1,13 +1,37 @@
-# Day-8: Dockerfile & Custom Image
+# 🌐 Day 8 - Dockerizing Node.js App
 
-## What I did:
-- Created Dockerfile
-- Built custom Docker image
-- Ran container using custom image
-- Hosted website locally
+---
 
-## Key Concept:
-Dockerfile is used to create custom images.
+## 📌 Objective
 
-## Output:
-Website running on http://localhost:8080
+Run a Node.js application inside Docker.
+
+---
+
+## ⚙️ Build Image
+
+```bash id="d8v1"
+docker build -t node-app .
+```
+
+---
+
+## ▶️ Run Container
+
+```bash id="d8v2"
+docker run -d -p 3000:3000 node-app
+```
+
+---
+
+## 🌐 Output
+
+http://localhost:3000
+
+---
+
+## 🧠 Learnings
+
+* Dockerizing backend apps
+* Port mapping
+* Running web servers in containers
