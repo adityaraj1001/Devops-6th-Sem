@@ -1,12 +1,37 @@
-# Day-9: Docker Hub Integration
+# 🐍 Day 9 - Dockerizing Flask App
 
-## What I did:
-- Logged into Docker Hub
-- Tagged custom image
-- Pushed image to Docker Hub
+---
 
-## Output:
-Docker image available online for reuse
+## 📌 Objective
 
-## Example:
-docker pull username/mywebsite
+Run Python Flask app using Docker.
+
+---
+
+## ⚙️ Build Image
+
+```bash id="d9v1"
+docker build -t flask-app .
+```
+
+---
+
+## ▶️ Run Container
+
+```bash id="d9v2"
+docker run -d -p 5000:5000 flask-app
+```
+
+---
+
+## 🌐 Output
+
+http://localhost:5000
+
+---
+
+## 🧠 Learnings
+
+* Dockerizing Python apps
+* Dependency management
+* Running APIs inside containers
