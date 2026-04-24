@@ -8,3 +8,9 @@
 # 3. GitHub Actions runs automatically
 
 # 4. Check Actions tab
+
+docker login
+docker build -t my-app .
+docker tag my-app username/my-app
+docker push username/my-app
+docker pull username/my-app
