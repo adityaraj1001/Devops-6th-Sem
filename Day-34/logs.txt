@@ -1,0 +1,4 @@
+Deployment started...
+Docker image built successfully
+Container started on port 5000
+Deployment successful
