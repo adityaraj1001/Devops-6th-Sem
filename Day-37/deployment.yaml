@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: advanced-app
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: advanced-app
+
+  template:
+    metadata:
+      labels:
+        app: advanced-app
+
+    spec:
+      containers:
+      - name: app-container
+        image: nginx
+        ports:
+        - containerPort: 80
