@@ -1,0 +1,11 @@
+docker stats
+docker logs <container_id>
+docker logs -f <container_id>
+docker inspect <container_id>
+docker top <container_id>
+
+top
+htop
+df -h
+free -m
+uptime
