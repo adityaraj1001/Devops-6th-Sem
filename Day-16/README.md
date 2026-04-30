@@ -1,75 +1,131 @@
-# 🗄️ Day 16 - Node.js + MySQL Multi-Container App
+# 🚀 Day 16 - Full Node.js + MySQL API (Dockerized)
 
 ---
 
 ## 📌 Objective
 
-* Build backend service
-* Connect with database
-* Use Docker Compose
+* Build real backend API
+* Connect Node.js with MySQL
+* Run multi-container system
 
 ---
 
 ## 🧠 Architecture
 
-User → Node App → MySQL Database
+User → Node API → MySQL Database
 
 ---
 
-## ⚙️ Run Application
+## ⚙️ Run Project
 
 ```bash
-docker-compose up
+docker-compose up --build
 ```
 
 ---
 
-## 🌐 Access
+## 🌐 API Endpoints
 
-http://localhost:3000
+### Home
 
----
-
-## 🧪 Practical Work
-
-✔ Created Node.js server
-✔ Setup MySQL container
-✔ Linked services using Compose
-✔ Ran multi-container system
+```bash
+GET /
+```
 
 ---
 
-## ⚠️ Common Errors
+### Initialize Table
 
-❌ DB not connecting
+```bash
+GET /init
+```
+
+---
+
+### Add User
+
+```bash
+POST /add
+Body:
+{
+  "name": "Aditya"
+}
+```
+
+---
+
+### Get Users
+
+```bash
+GET /users
+```
+
+---
+
+## 🧪 Testing (Example)
+
+```bash
+curl -X POST http://localhost:3000/add \
+-H "Content-Type: application/json" \
+-d '{"name":"Aditya"}'
+```
+
+---
+
+## 📊 Output Example
+
+```json
+[
+  {
+    "id": 1,
+    "name": "Aditya"
+  }
+]
+```
+
+---
+
+## ⚠️ Common Issues
+
+### ❌ DB not ready
+
 ✔ Fix:
 
-* Check service name
-* Use depends_on
+* Wait a few seconds before API call
+
+---
+
+### ❌ Connection error
+
+✔ Fix:
+
+* Check service name (`db`)
 
 ---
 
 ## 💡 Pro Tips
 
-* Always use service name instead of localhost
-* Use environment variables for DB credentials
+* Use service name instead of localhost
+* Use environment variables (next step)
+* Add retry logic for DB connection
 
 ---
 
 ## 🧠 Learnings
 
-* Multi-container apps
-* Backend + database integration
-* Service communication
+* API development
+* Database integration
+* Docker networking
+* Microservices architecture
 
 ---
 
 ## 🎯 Outcome
 
-Successfully deployed backend + database system.
+Successfully built full backend API with database using Docker.
 
 ---
 
 ## ⭐ Note
 
-This is a **real-world microservice architecture example** 🚀
+This is a **real DevOps project-level implementation** 🚀
