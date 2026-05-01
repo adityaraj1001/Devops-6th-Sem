@@ -1,18 +1,31 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=200&section=header&text=DevOps%20Journey&fontSize=52&fontColor=ffffff&fontAlignY=38&desc=Docker%20%7C%20AWS%20EC2%20%7C%20CI%2FCD%20%7C%20Linux&descAlignY=58&descSize=18" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=DevOps%20Journey&fontSize=50&fontColor=ffffff&fontAlignY=38&desc=Docker%20%7C%20AWS%20EC2%20%7C%20CI%2FCD%20%7C%20Linux&descAlignY=60&descSize=18"/>
 
 <br/>
 
-![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=2C9EF7&center=true&vCenter=true&width=500&lines=30+Days+of+DevOps+%F0%9F%9A%80;Docker+%7C+CI%2FCD+%7C+AWS+EC2;Building+real-world+pipelines!+%E2%9A%99%EF%B8%8F)
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=2C9EF7&center=true&vCenter=true&width=600&lines=🚀+30%2B+Days+of+DevOps;🐳+Docker+%7C+⚙️+CI%2FCD+%7C+☁️+AWS;🔥+Real+Projects+%7C+Automation+%7C+Deployment"/>
 
 </div>
 
 ---
 
-## 📌 About This Repository
+<h1 align="center">🚀 DevOps 6th Semester Practice</h1>
 
-This repo documents my **30-day hands-on DevOps challenge** — from Docker basics to production-grade CI/CD pipelines and cloud deployments on AWS EC2. Every day includes working code, notes, and real projects.
+<p align="center">
+<b>Hands-on DevOps journey — from containers to CI/CD pipelines</b>
+</p>
+
+---
+
+## 🧭 Overview
+
+<p align="center">
+
+💡 This repository showcases my <b>complete DevOps learning journey</b>
+—from Docker basics to real-world deployments.
+
+</p>
 
 ---
 
@@ -20,39 +33,83 @@ This repo documents my **30-day hands-on DevOps challenge** — from Docker basi
 
 <div align="center">
 
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS_EC2-FF9900?style=for-the-badge&logo=amazonaws&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Apache](https://img.shields.io/badge/Apache-D22128?style=for-the-badge&logo=apache&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
+<img src="https://skillicons.dev/icons?i=docker,aws,github,linux,nginx,bash" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/Jenkins-CI/CD-red?style=for-the-badge&logo=jenkins"/>
+<img src="https://img.shields.io/badge/GitHub_Actions-Automation-blue?style=for-the-badge&logo=githubactions"/>
 
 </div>
 
 ---
 
-## 📅 Daily Progress
+## 📅 DevOps Roadmap
 
-| Days | Topic |
-|------|-------|
-| Day 1–7 | 🐳 Docker Basics — images, containers, volumes, networking |
-| Day 8–14 | 🔧 Docker Advanced — multi-stage builds, custom networks, secrets |
-| Day 15–20 | 🧩 Docker Compose Projects — multi-container apps |
-| Day 21–25 | ⚙️ CI/CD — GitHub Actions + Jenkins pipelines |
+<div align="center">
+
+| Phase         | Description                    |
+| ------------- | ------------------------------ |
+| 🐳 Days 1–7   | Docker Fundamentals            |
+| 🔧 Days 8–14  | Docker Advanced + Projects     |
+| 🧩 Days 15–20 | Docker Compose (Microservices) |
+| ⚙️ Days 21–30 | CI/CD Pipelines                |
+| 🚀 Days 31+   | Monitoring + Kubernetes        |
+
+</div>
+
+---
+
+## ⚙️ DevOps Workflow
+
+<div align="center">
+
+```text
+Code → GitHub → CI/CD → Docker → Deployment → User
+```
+
+</div>
 
 ---
 
 ## 📦 Featured Projects
 
-| Project | Stack | Description |
-|---------|-------|-------------|
-| 🚀 Dockerized Python App | Python + Docker | Containerized Flask API with multi-stage build |
-| 🌐 Node.js + MongoDB | Node + Mongo + Compose | Full-stack app with Docker Compose |
-| 📰 WordPress + MySQL | WordPress + MySQL + Compose | Production-style CMS deployment |
-| ⚙️ GitHub Actions CI | YAML + Docker | Automated build & test pipeline on push |
-| 🔄 Jenkins Pipeline | Jenkinsfile + Docker | End-to-end delivery pipeline |
+<div align="center">
+
+| 🚀 Project       | ⚙️ Stack         | 📌 Description         |
+| ---------------- | ---------------- | ---------------------- |
+| Flask API        | Python + Docker  | Containerized REST API |
+| Node + MySQL     | Node + DB        | Full backend system    |
+| WordPress        | Compose          | CMS deployment         |
+| CI Pipeline      | GitHub Actions   | Auto build & test      |
+| Jenkins Pipeline | Jenkins + Docker | Full automation        |
+
+</div>
+
+---
+
+## 🔥 What Makes This Repo Unique
+
+<div align="center">
+
+✅ Real debugging experience
+✅ Multi-container architecture
+✅ CI/CD automation pipelines
+✅ Cloud deployment (AWS EC2)
+
+</div>
+
+---
+
+## 🧪 Real Case Study
+
+<div align="center">
+
+🔴 <b>Problem:</b> App couldn’t connect to database
+🟡 <b>Cause:</b> DB container not ready
+🟢 <b>Solution:</b> Used <code>depends_on</code> + retry logic
+
+</div>
 
 ---
 
@@ -60,45 +117,88 @@ This repo documents my **30-day hands-on DevOps challenge** — from Docker basi
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api?username=adityaraj1001&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" height="160"/>
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=adityaraj1001&theme=tokyonight&hide_border=true" height="160"/>
+<img src="https://github-readme-stats.vercel.app/api?username=adityaraj1001&show_icons=true&theme=tokyonight&hide_border=true"/>
+<br/>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=adityaraj1001&theme=tokyonight&hide_border=true"/>
 
 </div>
 
 ---
 
-## 🧠 What I've Learned
+## 📂 Repository Structure
 
-- ✅ Containerization with Docker — images, volumes, networks
-- ✅ Multi-container architecture using Docker Compose
-- ✅ Cloud deployment on AWS EC2 with security groups & SSH
-- ✅ CI/CD pipelines with GitHub Actions & Jenkins
-- ✅ Automation workflows — build, test, deploy
+```text
+Day-1 → Day-37/
+Docker/
+Docker-Compose/
+Jenkins/
+GitHub-Actions/
+Projects/
+docs/
+Screenshots/
+```
 
 ---
 
 ## 📸 Screenshots
 
-> _Add your project screenshots here — drag & drop images into this section._
+<p align="center">
+📷 Docker | 📷 API | 📷 Jenkins | 📷 GitHub Actions
+</p>
 
 ---
 
-## 🔥 Future Goals
-
-- ☸️ Kubernetes (K8s) — orchestration at scale
-- 🔁 Advanced CI/CD pipelines with rollback strategies
-- ☁️ Cloud-native architecture (ECS, EKS, Lambda)
-- 📊 Monitoring & logging — Prometheus, Grafana, ELK Stack
-
----
-
-## 🌐 Connect with Me
+## ⚠️ Challenges & Fixes
 
 <div align="center">
 
-[![GitHub](https://img.shields.io/badge/GitHub-adityaraj1001-181717?style=for-the-badge&logo=github)](https://github.com/adityaraj1001)
-[![LeetCode](https://img.shields.io/badge/LeetCode-Aditya__Raj12305995-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/Aditya_Raj12305995)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/adityaraj1001)
+❌ Container crash → ✔ Checked logs
+❌ Port conflict → ✔ Changed mapping
+❌ DB error → ✔ Fixed networking
+
+</div>
+
+---
+
+## 🔮 Future Goals
+
+<div align="center">
+
+☸️ Kubernetes (K8s)
+📊 Monitoring (Prometheus + Grafana)
+☁️ Cloud-native apps
+
+</div>
+
+---
+
+## 🌐 Connect With Me
+
+<div align="center">
+
+<a href="https://github.com/adityaraj1001">
+<img src="https://img.shields.io/badge/GitHub-Profile-black?style=for-the-badge&logo=github"/>
+</a>
+
+<a href="https://linkedin.com/in/adityaraj1001">
+<img src="https://img.shields.io/badge/LinkedIn-Connect-blue?style=for-the-badge&logo=linkedin"/>
+</a>
+
+<a href="https://leetcode.com/Aditya_Raj12305995">
+<img src="https://img.shields.io/badge/LeetCode-Profile-orange?style=for-the-badge&logo=leetcode"/>
+</a>
+
+</div>
+
+---
+
+## ⭐ Final Note
+
+<div align="center">
+
+🔥 <b>Consistency + Practice = DevOps Mastery</b>
+
+⭐ Star this repo if you like it!
 
 </div>
 
@@ -106,8 +206,6 @@ This repo documents my **30-day hands-on DevOps challenge** — from Docker basi
 
 <div align="center">
 
-⭐ **If this helped you, drop a star — it keeps me going!** ⭐
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=100&section=footer" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/>
 
 </div>
