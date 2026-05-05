@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-canary
+
+spec:
+  replicas: 1   # smaller traffic
+
+  selector:
+    matchLabels:
+      app: my-app
+      version: canary
+
+  template:
+    metadata:
+      labels:
+        app: my-app
+        version: canary
+
+    spec:
+      containers:
+      - name: app
+        image: nginx:latest
+        ports:
+        - containerPort: 80
