@@ -1,186 +1,274 @@
-# 🐳 Day 1 - Docker Basics & Setup
+# 🐳 Day 1 - Docker Fundamentals & Setup
 
 ---
 
-## 📌 Objective
+# 📌 Objective
 
-* Understand what Docker is
+* Understand Docker basics
 * Install Docker Desktop
-* Run first container
-* Learn basic Docker commands
+* Learn Docker architecture
+* Run first containers
+* Explore Docker commands
 
 ---
 
-## 🧠 What is Docker?
+# 🧠 What is Docker?
 
-Docker is a platform that allows developers to **build, run, and manage applications in containers**.
+Docker is a containerization platform used to:
 
-👉 A container is a lightweight environment that includes:
-
-* Application code
-* Dependencies
-* Runtime
+* Build applications
+* Package dependencies
+* Run apps consistently everywhere
 
 ---
 
-## ⚙️ Installation
+# 🚀 Why Docker?
 
-### 🖥️ Docker Desktop Installation
+Before Docker:
+
+* "Works on my machine" problem ❌
+* Dependency conflicts ❌
+* Slow deployments ❌
+
+After Docker:
+
+* Consistent environments ✅
+* Fast deployment ✅
+* Lightweight containers ✅
+
+---
+
+# 🏗️ Docker Architecture
+
+Docker consists of:
+
+| Component         | Description          |
+| ----------------- | -------------------- |
+| Docker Client     | Sends commands       |
+| Docker Daemon     | Runs containers      |
+| Docker Images     | Templates            |
+| Docker Containers | Running applications |
+| Docker Registry   | Stores images        |
+
+---
+
+# 🔄 Docker Workflow
+
+```text id="7cf6uk"
+Dockerfile → Image → Container → Deployment
+```
+
+---
+
+# ⚙️ Docker Installation
+
+## 🖥️ Install Docker Desktop
 
 Steps:
 
 1. Download Docker Desktop
-2. Install and restart system
-3. Open Docker Desktop
+2. Install application
+3. Restart system
+4. Start Docker Desktop
 
 ---
 
-## 🔍 Verify Installation
+# 🔍 Verify Installation
 
-```bash
+```bash id="2fgjlwm"
 docker --version
 docker info
 ```
 
 ---
 
-## 📦 Docker Architecture (Basic)
+# 📦 Pull First Image
 
-* **Docker Client** → Runs commands
-* **Docker Daemon** → Executes commands
-* **Docker Images** → Templates
-* **Docker Containers** → Running instances
-
----
-
-## 🐳 First Docker Command
-
-### Pull Image
-
-```bash
-docker pull ubuntu
+```bash id="1avh4z"
+docker pull hello-world
 ```
 
 ---
 
-### Run Container
+# ▶️ Run First Container
 
-```bash
+```bash id="zcq8x7"
+docker run hello-world
+```
+
+---
+
+# 🧪 Run Ubuntu Container
+
+```bash id="76o1x8"
 docker run -it ubuntu
 ```
 
-👉 `-it` → interactive terminal
+👉 `-it` means:
+
+* `-i` → interactive
+* `-t` → terminal
 
 ---
 
-### List Running Containers
+# 📋 List Containers
 
-```bash
+## Running containers
+
+```bash id="kcfk0q"
 docker ps
 ```
 
 ---
 
-### List All Containers
+## All containers
 
-```bash
+```bash id="pbwbbs"
 docker ps -a
 ```
 
 ---
 
-### List Images
+# 📦 List Images
 
-```bash
+```bash id="fjl0h9"
 docker images
 ```
 
 ---
 
-### Stop Container
+# 🛑 Stop Container
 
-```bash
+```bash id="v8g9dl"
 docker stop <container_id>
 ```
 
 ---
 
-### Remove Container
+# ❌ Remove Container
 
-```bash
+```bash id="wzt0mr"
 docker rm <container_id>
 ```
 
 ---
 
-## 🧪 Practical Work
+# 🧪 Practical Tasks Performed
 
-✔ Pulled Ubuntu image
-✔ Ran container in interactive mode
-✔ Viewed containers and images
-✔ Stopped and removed container
-
----
-
-## 📸 Screenshots
-
-Screenshots included:
-
-* Docker Desktop UI
-* Running containers
-* Terminal output
-
-📂 (Check this folder for images)
+✔ Installed Docker Desktop
+✔ Verified Docker installation
+✔ Pulled hello-world image
+✔ Ran Ubuntu container
+✔ Viewed images and containers
 
 ---
 
-## ⚠️ Common Errors & Fixes
+# 📊 Output Example
 
-### ❌ Error: Docker not recognized
-
-✔ Fix: Restart system after installation
-
-### ❌ Error: Permission denied
-
-✔ Fix: Run Docker Desktop as administrator
-
----
-
-## 💡 Key Concepts Learned
-
-* Difference between image & container
-* How to run and manage containers
-* Basic Docker commands
-* Docker environment setup
-
----
-
-## 🔥 Extra Practice
-
-Try these:
-
-```bash
-docker run hello-world
-docker run -d nginx
-docker ps
+```text id="quz1lj"
+Hello from Docker!
+This message shows that your installation appears to be working correctly.
 ```
 
 ---
 
-## 🎯 Outcome
+# 📸 Screenshots
 
-Successfully installed Docker and executed basic commands.
+Include screenshots of:
 
----
-
-## 🧠 Summary
-
-* Docker simplifies application deployment
-* Containers are lightweight and fast
-* Basic commands help manage containers
+* Docker Desktop
+* hello-world output
+* docker ps
+* docker images
 
 ---
 
-## ⭐ Note
+# ⚠️ Common Errors & Fixes
 
-This is the first step towards mastering **DevOps & containerization** 🚀
+## ❌ Docker daemon not running
+
+✔ Fix:
+
+* Start Docker Desktop
+
+---
+
+## ❌ docker command not recognized
+
+✔ Fix:
+
+* Restart terminal/system
+
+---
+
+## ❌ Permission denied
+
+✔ Fix:
+
+* Run Docker Desktop as administrator
+
+---
+
+# 💡 Important Docker Concepts
+
+## 🔹 Image
+
+Blueprint/template
+
+## 🔹 Container
+
+Running instance of image
+
+## 🔹 Registry
+
+Stores Docker images
+
+## 🔹 Volume
+
+Persistent storage
+
+## 🔹 Network
+
+Communication between containers
+
+---
+
+# 🔥 Extra Practice
+
+```bash id="7djqpi"
+docker run nginx
+docker run redis
+docker run mongo
+```
+
+---
+
+# 🌐 Real-World Use Cases
+
+Docker is used in:
+
+* Netflix
+* Amazon
+* Google
+* Spotify
+
+---
+
+# 🧠 Key Learnings
+
+* Docker architecture
+* Running containers
+* Managing images
+* Container lifecycle basics
+
+---
+
+# 🎯 Outcome
+
+Successfully installed Docker and ran first containers 🚀
+
+---
+
+# ⭐ Note
+
+Docker is one of the most important tools in modern DevOps and cloud computing.
