@@ -1,0 +1,6 @@
+helm install myapp ./myapp-chart
+helm list
+helm upgrade myapp ./myapp-chart
+helm uninstall myapp
+helm lint ./myapp-chart
+kubectl get pods
