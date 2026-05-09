@@ -1,0 +1,5 @@
+docker build -t devops-cicd-app .
+helm upgrade --install myapp ./helm-chart
+kubectl get pods
+kubectl get services
+helm list
