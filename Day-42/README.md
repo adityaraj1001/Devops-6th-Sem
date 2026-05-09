@@ -1,253 +1,199 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=240&section=header&text=DevOps%20Journey&fontSize=54&fontColor=ffffff&fontAlignY=38&desc=Docker%20%7C%20CI%2FCD%20%7C%20AWS%20EC2%20%7C%20Kubernetes&descAlignY=60&descSize=20"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:141E30,50:243B55,100:0F2027&height=200&section=header&text=Day%2042%20-%20Kubernetes%20CI%2FCD&fontSize=42&fontColor=ffffff&fontAlignY=38&desc=Jenkins%20%7C%20Docker%20%7C%20Helm%20%7C%20Kubernetes&descAlignY=60&descSize=18"/>
 
 <br/>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=20&pause=1000&color=36BCF7&center=true&vCenter=true&width=700&lines=🚀+40%2B+Days+of+DevOps+Journey;🐳+Docker+%7C+⚙️+CI%2FCD+%7C+☁️+AWS+EC2;☸️+Kubernetes+%7C+Helm+%7C+Monitoring;🔥+Real+Projects+%7C+Automation+%7C+Deployment"/>
-
-<br/>
-
-<img src="https://komarev.com/ghpvc/?username=adityaraj1001&label=Repository%20Views&color=0e75b6&style=for-the-badge"/>
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=18&pause=1000&color=36BCF7&center=true&vCenter=true&width=600&lines=🚀+Automated+Kubernetes+Deployment;⚙️+CI%2FCD+with+Jenkins+%26+Helm;☸️+Production-Style+DevOps+Workflow"/>
 
 </div>
 
 ---
 
-<h1 align="center">🚀 DevOps 6th Semester Practice Repository</h1>
-
-<p align="center">
-<b>Hands-on DevOps learning journey covering Docker, CI/CD, Kubernetes, Cloud Deployment, Monitoring & Automation</b>
-</p>
-
----
-
-# 📌 About This Repository
-
-This repository contains my **40+ day DevOps learning journey** where I practiced and implemented:
-
-* 🐳 Docker & Containerization
-* ⚙️ CI/CD Pipelines
-* ☁️ AWS EC2 Deployment
-* ☸️ Kubernetes & Helm
-* 📊 Monitoring & Logging
-* 🤖 Automation Scripts
-
-💡 The goal of this repository is to build **real-world DevOps skills** through practical implementation and production-style workflows.
-
----
-
-# 🛠️ Tech Stack & Tools
+# 🚀 Day 42 - Kubernetes CI/CD Pipeline
 
 <div align="center">
 
-<img src="https://skillicons.dev/icons?i=docker,aws,github,linux,bash,kubernetes,jenkins,nodejs,python,mysql,nginx"/>
-
-<br/><br/>
-
-<img src="https://img.shields.io/badge/Docker-Containerization-2496ED?style=for-the-badge&logo=docker&logoColor=white"/>
-<img src="https://img.shields.io/badge/Jenkins-CI/CD-D24939?style=for-the-badge&logo=jenkins&logoColor=white"/>
-<img src="https://img.shields.io/badge/GitHub_Actions-Automation-2088FF?style=for-the-badge&logo=githubactions&logoColor=white"/>
-<img src="https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white"/>
-<img src="https://img.shields.io/badge/Helm-Charts-0F1689?style=for-the-badge&logo=helm&logoColor=white"/>
+![Jenkins](https://img.shields.io/badge/Jenkins-CI/CD-red?style=for-the-badge\&logo=jenkins)
+![Docker](https://img.shields.io/badge/Docker-Containerization-blue?style=for-the-badge\&logo=docker)
+![Kubernetes](https://img.shields.io/badge/Kubernetes-Orchestration-326CE5?style=for-the-badge\&logo=kubernetes)
+![Helm](https://img.shields.io/badge/Helm-Package_Manager-0F1689?style=for-the-badge\&logo=helm)
 
 </div>
 
 ---
 
-# 📅 DevOps Learning Roadmap
+# 📌 Objective
 
-<div align="center">
+This project demonstrates a **production-style CI/CD pipeline** using:
 
-| Phase        | Topics Covered                            |
-| ------------ | ----------------------------------------- |
-| 🐳 Day 1–10  | Docker Fundamentals & Images              |
-| ⚙️ Day 11–20 | Docker Compose & Multi-Container Apps     |
-| 🚀 Day 21–30 | Jenkins + GitHub Actions + CI/CD          |
-| ☸️ Day 31–40 | Kubernetes, Helm, Monitoring, Deployments |
+* ⚙️ Jenkins Pipeline
+* 🐳 Docker Image Build
+* ☸️ Kubernetes Deployment
+* ⛵ Helm Charts
 
-</div>
+The workflow automates the complete deployment lifecycle from code push to Kubernetes deployment.
 
 ---
 
-# ⚙️ DevOps Workflow
+# 🧠 Architecture
 
 <div align="center">
 
-```text
-Developer → GitHub → Jenkins/GitHub Actions → Docker → Kubernetes → User
+```text id="t8w1xg"
+Developer → GitHub → Jenkins → Docker → Helm → Kubernetes
 ```
 
 </div>
 
 ---
 
-# ☸️ Kubernetes Workflow
+# ⚙️ Workflow
 
-<div align="center">
-
-```text
-Code → Docker Image → Helm Chart → Kubernetes Cluster → Deployment
-```
-
-</div>
-
----
-
-# 📦 Featured Projects
-
-<div align="center">
-
-| 🚀 Project            | ⚙️ Tech Stack            | 📌 Description                |
-| --------------------- | ------------------------ | ----------------------------- |
-| Flask API             | Python + Docker          | Dockerized REST API           |
-| Node.js + MySQL       | Node + MySQL + Compose   | Full backend architecture     |
-| WordPress Deployment  | Compose + MySQL          | CMS deployment setup          |
-| CI/CD Pipeline        | GitHub Actions + Jenkins | Automated build & deploy      |
-| Kubernetes Deployment | K8s + Helm               | Scalable container deployment |
-| Monitoring Stack      | Prometheus + Grafana     | Metrics & visualization       |
-
-</div>
+| Step | Description                             |
+| ---- | --------------------------------------- |
+| 1️⃣  | Developer pushes code to GitHub         |
+| 2️⃣  | Jenkins pipeline triggers automatically |
+| 3️⃣  | Docker image is built                   |
+| 4️⃣  | Helm deploys application                |
+| 5️⃣  | Kubernetes runs containers              |
 
 ---
 
-# 🔥 Real DevOps Concepts Implemented
+# 📂 Project Structure
 
-✅ Multi-container architecture
-✅ Docker networking & volumes
-✅ CI/CD pipelines
-✅ Kubernetes deployments
-✅ Helm chart management
-✅ Monitoring & logging
-✅ Canary & Blue-Green deployment
-✅ Rollback strategies
-✅ Production-style automation
-
----
-
-# 🧪 Real Case Study
-
-<div align="center">
-
-| Problem                | Cause                        | Solution                        |
-| ---------------------- | ---------------------------- | ------------------------------- |
-| ❌ DB connection failed | Database container not ready | Used `depends_on` & retry logic |
-| ❌ Port conflict        | Same port already used       | Changed port mapping            |
-| ❌ Container crash      | Wrong image configuration    | Debugged using logs             |
-
-</div>
-
----
-
-# 📂 Repository Structure
-
-```text
-Day-1 → Day-42/
-Docker/
-Docker-Compose/
-Jenkins/
-GitHub-Actions/
-Kubernetes/
-Helm/
-Monitoring/
-Projects/
-docs/
-Screenshots/
+```text id="ddmzvp"
+Day-42/
+│
+├── Jenkinsfile
+├── Dockerfile
+├── app/
+├── helm-chart/
+├── README.md
+├── commands.txt
+└── screenshots/
 ```
 
 ---
 
-# 📊 GitHub Stats
+# 🐳 Docker Build
+
+## Build Image
+
+```bash id="6grgtg"
+docker build -t devops-cicd-app .
+```
+
+---
+
+# ⚙️ Jenkins Pipeline
+
+## Pipeline Stages
+
+* ✅ Checkout Code
+* ✅ Build Docker Image
+* ✅ Push Image
+* ✅ Deploy with Helm
+
+---
+
+# ☸️ Kubernetes Deployment
+
+## Deploy using Helm
+
+```bash id="g9dqva"
+helm upgrade --install myapp ./helm-chart
+```
+
+---
+
+## Check Resources
+
+```bash id="jvkj4m"
+kubectl get pods
+kubectl get services
+```
+
+---
+
+# 🌐 Access Application
+
+```text id="4ct2zb"
+http://<NodeIP>:30010
+```
+
+---
+
+# 📊 Technologies Used
 
 <div align="center">
 
-<img height="170" src="https://github-readme-stats.vercel.app/api?username=adityaraj1001&show_icons=true&theme=tokyonight&hide_border=true"/>
-
-<img height="170" src="https://github-readme-streak-stats.herokuapp.com/?user=adityaraj1001&theme=tokyonight&hide_border=true"/>
-
-<br/>
-
-<img src="https://github-readme-activity-graph.vercel.app/graph?username=adityaraj1001&theme=tokyo-night&hide_border=true"/>
+| Technology | Purpose               |
+| ---------- | --------------------- |
+| Jenkins    | CI/CD Automation      |
+| Docker     | Containerization      |
+| Kubernetes | Orchestration         |
+| Helm       | Deployment Management |
+| GitHub     | Version Control       |
 
 </div>
 
 ---
 
-# 📸 Project Screenshots
+# 🧪 Practical Work
+
+✔ Created Jenkins CI/CD pipeline
+✔ Built Docker image automatically
+✔ Deployed app using Helm
+✔ Verified Kubernetes pods
+
+---
+
+# 📸 Screenshots
 
 <div align="center">
 
-📷 Docker Containers
-📷 Jenkins Pipelines
+📷 Jenkins Dashboard
+📷 Pipeline Success
 📷 Kubernetes Pods
-📷 Grafana Dashboards
-📷 GitHub Actions Workflow
+📷 Helm Deployment
 
 </div>
 
 ---
 
-# 📊 Monitoring & Logging
+# ⚠️ Challenges & Fixes
 
-<div align="center">
-
-| Tool          | Purpose                  |
-| ------------- | ------------------------ |
-| Prometheus    | Metrics collection       |
-| Grafana       | Visualization dashboards |
-| Docker Logs   | Container debugging      |
-| Node Exporter | System monitoring        |
-
-</div>
-
----
-
-# ☁️ Cloud & Deployment
-
-* AWS EC2 Deployment
-* SSH Access & Configuration
-* Linux Server Management
-* Security Groups & Networking
+| Problem                  | Solution                   |
+| ------------------------ | -------------------------- |
+| ❌ Pod CrashLoopBackOff   | Checked logs & fixed image |
+| ❌ Helm install failed    | Used `helm lint`           |
+| ❌ Service not accessible | Fixed NodePort mapping     |
 
 ---
 
 # 💡 Key Learnings
 
-* 🚀 Containerization using Docker
-* ⚙️ Automation with CI/CD
-* ☸️ Kubernetes orchestration
-* 📊 Monitoring & logging
-* 🔥 Production deployment strategies
+* 🚀 End-to-end CI/CD automation
+* 🐳 Docker image management
+* ☸️ Kubernetes deployment workflow
+* ⚙️ Helm-based application management
 
 ---
 
-# 🔮 Future Goals
+# 🔥 Real DevOps Concepts Used
 
-* ☁️ AWS EKS & ECS
-* 🔄 Advanced CI/CD with ArgoCD
-* 📊 ELK Stack Logging
-* ⚡ Terraform Infrastructure as Code
-* 🔥 Service Mesh (Istio)
+✅ CI/CD Pipelines
+✅ Infrastructure Automation
+✅ Container Orchestration
+✅ Deployment Management
+✅ Production Workflow
 
 ---
 
-# 🌐 Connect With Me
+# 🎯 Outcome
 
-<div align="center">
-
-<a href="https://github.com/adityaraj1001">
-<img src="https://img.shields.io/badge/GitHub-adityaraj1001-181717?style=for-the-badge&logo=github"/>
-</a>
-
-<a href="https://linkedin.com/in/adityaraj1001">
-<img src="https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin"/>
-</a>
-
-<a href="https://leetcode.com/Aditya_Raj12305995">
-<img src="https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&logo=leetcode&logoColor=black"/>
-</a>
-
-</div>
+Successfully implemented a **production-style Kubernetes CI/CD pipeline** using Jenkins, Docker, Helm, and Kubernetes 🚀
 
 ---
 
@@ -255,11 +201,7 @@ Screenshots/
 
 <div align="center">
 
-💡 <b>"DevOps is not just tools — it's automation, reliability, and continuous improvement."</b>
-
-<br/><br/>
-
-⭐ If you found this repository useful, consider giving it a star!
+💡 <b>"Automation is the backbone of modern DevOps."</b>
 
 </div>
 
@@ -267,6 +209,6 @@ Screenshots/
 
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:243B55,100:141E30&height=100&section=footer"/>
 
 </div>
