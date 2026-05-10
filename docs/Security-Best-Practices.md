@@ -1,13 +1,7 @@
-# 🚨 Incident Report
+# 🔐 DevOps Security Best Practices
 
-## Incident
-Application downtime due to container crash
-
-## Root Cause
-Wrong environment variable
-
-## Resolution
-Updated deployment configuration
-
-## Prevention
-Added validation checks
+- Never expose secrets
+- Use Kubernetes Secrets
+- Keep images updated
+- Use least privilege access
+- Monitor suspicious activity
